@@ -13,7 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-// TypeScript
+// ----- TypeScript
 type Tabs = Tab[];
 type Tab = {
   title: string;
@@ -29,6 +29,14 @@ type Project = {
   url: string;
   github: string;
   badges: string[];
+};
+type RelatedExperiences = Experience[];
+type Experience = {
+  role: string;
+  companyName: string;
+  description: string;
+  dates: string;
+  bulletPoints: string;
 };
 
 export default function Home() {
@@ -234,6 +242,7 @@ export default function Home() {
           </>
         </div>
       </section>
+
       <section id="Resume">
         {/* Resume / CV */}
         <div></div>
