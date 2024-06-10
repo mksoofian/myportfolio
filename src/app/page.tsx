@@ -202,27 +202,28 @@ export default function Home() {
                     <CardHeader>
                       <CardTitle>{name}</CardTitle>
                       <CardDescription>{description}</CardDescription>
+                      <CardContent className="flex flex-wrap gap-2 p-0">
+                        <>
+                          {badges.map((badge) => {
+                            return (
+                              <Badge
+                                key={badge}
+                                className={"text-zinc-600"}
+                                variant={"outline"}
+                              >
+                                {badge}
+                              </Badge>
+                            );
+                          })}
+                        </>
+                      </CardContent>
                     </CardHeader>
-                    <CardContent className="flex flex-wrap gap-2">
-                      <>
-                        {badges.map((badge) => {
-                          return (
-                            <Badge
-                              key={badge}
-                              className={"text-zinc-600"}
-                              variant={"outline"}
-                            >
-                              {badge}
-                            </Badge>
-                          );
-                        })}
-                      </>
-                    </CardContent>
+
                     <CardFooter className="flex gap-2">
-                      <Button>
+                      <Button size="sm">
                         <Link href={url}>Website</Link>
                       </Button>{" "}
-                      <Button>
+                      <Button size="sm">
                         <Link href={github}>Github</Link>
                       </Button>
                     </CardFooter>
