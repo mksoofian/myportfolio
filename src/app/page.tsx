@@ -34,9 +34,9 @@ type RelatedExperiences = Experience[];
 type Experience = {
   role: string;
   companyName: string;
-  description: string;
+  companyDescription: string;
   dates: string;
-  bulletPoints: string;
+  bulletPoints: string[];
 };
 
 export default function Home() {
@@ -112,6 +112,44 @@ export default function Home() {
       description:
         "Provide individuals with pro bono financial education services, including budgets, financial assessments, financial planning, and savings strategies.",
       badges: [],
+    },
+  ];
+  const relatedExperience: RelatedExperiences = [
+    {
+      role: "Freelance Web Developer",
+      companyName: "AtoZ Supplies ",
+      companyDescription:
+        "A to Z Supplies is a  distributor of food-service packaging  and janitorial disposable  products.",
+      dates: "Nov 2023 - Jun 2024",
+      bulletPoints: [
+        "Designed a temporary website using figma, HTML and CSS and deployed via Github and Vercel to funnel visitors to our WhatsApp Business account. (website link)",
+        "Designed and created an updated company ecommerce website with Nextjs, React, Typescript, CSS,  and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.  **(preview link)",
+        "Proactively revamped and modernizing company branding and marketing materials with figma to better connect with customers and improve the brand positioning and website.",
+        "Continuously reviewing warehousing software and office SOP for improving  efficiency and preparation for growth and  scale. ",
+      ],
+    },
+    {
+      role: "Freelance Web Developer",
+      companyName: "Greenfield Accounting ",
+      companyDescription:
+        "Greenfield Accounting is a accounting firm in Rockland County, NY",
+      dates: "May 2023",
+      bulletPoints: [
+        " Removed bloated CSS frameworks and unused code from a legacy site and updated CSS to use new and improved layout schemes. Built new site in Next.js and React and deployed with Vercel. (website link). Utilized emotion CSS, Javascript, and React hooks in this project.",
+      ],
+    },
+    {
+      role: "Customer Experience Engineer (React & Automation)",
+      companyName: "Tivuna",
+      companyDescription:
+        "Tivuna is a glass and aluminum glazing business focused on building facade projects.",
+      dates: "July 2022 - Feb 2023",
+      bulletPoints: [
+        "Maintained and improved design for the company website.",
+        "Established an outline for the proper flow of internal information leading to improved time management, efficiency, and accountability.",
+        "Extended the company’s use of Hubspot beyond basic CRM features and automated workflows. Automation included correspondence maintained in Hubspot deals, deal stages, alerts to notify staff when tasks were completed or new tasks created, and reminders for tasks to be completed. ",
+        "Managed projects from initial lead creation through completion and maintained client relationships. ",
+      ],
     },
   ];
 
