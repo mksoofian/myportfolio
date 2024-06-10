@@ -37,6 +37,8 @@ type Experience = {
   companyDescription: string;
   dates: string;
   bulletPoints: string[];
+  websiteUrl?: string;
+  projectUrl?: string;
 };
 
 export default function Home() {
@@ -81,6 +83,7 @@ export default function Home() {
         "Javascript",
         "Tailwind",
         "Shadcn",
+        "React-Hook-Form",
         "API",
         "HTML5",
         "CSS4",
@@ -122,11 +125,17 @@ export default function Home() {
         "A to Z Supplies is a  distributor of food-service packaging  and janitorial disposable  products.",
       dates: "Nov 2023 - Jun 2024",
       bulletPoints: [
-        "Designed a temporary website using figma, HTML and CSS and deployed via Github and Vercel to funnel visitors to our WhatsApp Business account. (website link)",
-        "Designed and created an updated company ecommerce website with Nextjs, React, Typescript, CSS,  and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.  **(preview link)",
+        `Designed a temporary website using figma, HTML and CSS and deployed via Github and Vercel to funnel visitors to our WhatsApp Business account.`,
+        `Designed and created an updated company ecommerce website with Nextjs, React, Typescript, CSS, and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.`,
+        // `Designed and created an updated company ecommerce website with ${(
+        //   <span className="font-semibold">Nextjs, React, Typescript</span>
+        // )}, CSS, and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.`,
         "Proactively revamped and modernizing company branding and marketing materials with figma to better connect with customers and improve the brand positioning and website.",
         "Continuously reviewing warehousing software and office SOP for improving  efficiency and preparation for growth and  scale. ",
       ],
+      websiteUrl: "https://atozsupplies.com/",
+      projectUrl:
+        "https://drive.google.com/file/d/17j06Yh6RGSEEcvliiJnM9vK1Kz8ZkDWx/view?usp=sharing",
     },
     {
       role: "Freelance Web Developer",
@@ -137,6 +146,7 @@ export default function Home() {
       bulletPoints: [
         " Removed bloated CSS frameworks and unused code from a legacy site and updated CSS to use new and improved layout schemes. Built new site in Next.js and React and deployed with Vercel. (website link). Utilized emotion CSS, Javascript, and React hooks in this project.",
       ],
+      websiteUrl: "https://greenfieldtax.com/",
     },
     {
       role: "Customer Experience Engineer (React & Automation)",
@@ -154,7 +164,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="sm:mt-6 mt-1">
+    <main className="sm:mt-10 mt-2 flex flex-col">
       <section className="flex justify-evenly flex-wrap gap-8" id="About">
         {/* About Me */}
         <div className="lg:max-w-96 px-8 sm:px-4">
@@ -223,11 +233,12 @@ export default function Home() {
           </Tabs>
         </div>
       </section>
-
       <section id="Projects" className="my-8">
         {/* Projects */}
-        <Label className="text-2xl">Projects</Label>
-        <div className="mt-2 flex flex-col md:flex-row gap-4 ">
+        <Label htmlFor="projectList" className="text-2xl pl-4 ">
+          Projects
+        </Label>
+        <div id="projectList" className="mt-2 flex flex-col md:flex-row gap-4 ">
           <>
             {projects.map(
               ({ name, description, image, url, github, badges }) => {
@@ -280,12 +291,76 @@ export default function Home() {
           </>
         </div>
       </section>
-
-      <section id="Resume">
+      <section id="Resume" className="my-10">
         {/* Resume / CV */}
-        <div></div>
+        {/* remove this outer div? */}
+        <div>
+          <Label htmlFor="relatedExperience" className="text-2xl pl-4">
+            Work Experience
+          </Label>
+          <div id="relatedExperience">
+            {relatedExperience.map(
+              ({
+                role,
+                companyName,
+                companyDescription,
+                dates,
+                bulletPoints,
+                websiteUrl,
+                projectUrl,
+              }) => {
+                return (
+                  <div key={`${role}-${dates}`} className="py-6 px-6 sm:py-2">
+                    {/* Header */}
+                    <div className="py-2">
+                      <div id="row1" className="flex justify-between my-2">
+                        <div className="flex flex-wrap ">
+                          <h3 className="font-semibold pr-1">{role},</h3>
+                          <p>{companyName}</p>
+                        </div>
+                        <p id="dates">{dates}</p>
+                      </div>
+                      <div id="row2" className="italic text-sm text-zinc-500">
+                        {companyDescription}
+                      </div>
+                    </div>
+                    {/* Details */}
+                    <ul id="bulletPoints" className="list-disc">
+                      <>
+                        {bulletPoints.map((bullet, index) => {
+                          return (
+                            <li key={bulletPoints[index]} className="">
+                              {bullet}
+                            </li>
+                          );
+                        })}
+                      </>
+                    </ul>
+                    {/* Relevant Website Link/ Buttons */}
+                    {websiteUrl && (
+                      <div key={companyName} className="my-4 flex gap-2">
+                        <Button variant={"outline"}>
+                          <Link href={websiteUrl}>Website</Link>
+                        </Button>
+                        {projectUrl && (
+                          <Button variant={"outline"}>
+                            <Link href={projectUrl}>Project</Link>
+                          </Button>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+            )}
+          </div>
+        </div>
+        <div className="italic font-light text-sm py-6 bg-zinc-100 my-10 text-center">
+          Prior experience includes 12 years in the apparel production industry.
+        </div>
       </section>
-      <footer id="Contact"></footer>
+
+      {/* <footer id="Contact"></footer> */}
     </main>
   );
 }
