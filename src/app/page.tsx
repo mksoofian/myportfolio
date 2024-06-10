@@ -12,6 +12,8 @@ import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
+// TypeScript
 type Tabs = Tab[];
 type Tab = {
   title: string;
@@ -19,9 +21,18 @@ type Tab = {
   description: string;
   badges: string[];
 };
+type Projects = Project[];
+type Project = {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+  github: string;
+  badges: string[];
+};
 
 export default function Home() {
-  const projects = [
+  const projects: Projects = [
     {
       name: "Menu",
       description: "Restaurant menu rendered based on a heavily nested API.",
@@ -95,6 +106,7 @@ export default function Home() {
       badges: [],
     },
   ];
+
   return (
     <main className="sm:mt-6 mt-1">
       <section className="flex justify-evenly flex-wrap gap-8" id="About">
@@ -167,7 +179,7 @@ export default function Home() {
       </section>
 
       <section id="Projects" className="my-8">
-        {/*  */}
+        {/* Projects */}
         <Label className="text-2xl">Projects</Label>
         <div className="mt-2 flex flex-col md:flex-row gap-4 ">
           <>
@@ -176,7 +188,7 @@ export default function Home() {
                 return (
                   <Card
                     key={name}
-                    className=" w-full md:w-1/3 p-4 flex flex-col justify-between"
+                    className=" w-full md:w-1/3 p-4 flex flex-col justify-between hover:border-zinc-300 hover:bg-slate-50 "
                   >
                     <Link href={url} className="w-full ">
                       <Image
@@ -206,7 +218,10 @@ export default function Home() {
                         })}
                       </>
                     </CardContent>
-                    <CardFooter>
+                    <CardFooter className="flex gap-2">
+                      <Button>
+                        <Link href={url}>Website</Link>
+                      </Button>{" "}
                       <Button>
                         <Link href={github}>Github</Link>
                       </Button>
