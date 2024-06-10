@@ -3,9 +3,8 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 export default function Nav() {
   return (
-    <nav className="flex justify-between py-4 ">
-      <h1>{`< react developer />`}</h1>
-      <p className="font-bold text-xl">Michael Soofian</p>
+    <nav className="flex justify-between py-4 sticky px-4 sm:px-4">
+      <p className="font-medium text-xl">michael soofian</p>
       {/* <ul className="flex items-center gap-4 ">
         <li>
           <Link href={"#Projects"}>projects</Link>{" "}
