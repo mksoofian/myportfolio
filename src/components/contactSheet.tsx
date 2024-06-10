@@ -91,11 +91,8 @@ export function ContactSheet() {
               )}
             />
 
-            <SheetFooter>
-              <SheetClose asChild>
-                <Button type="submit">Submit</Button>
-              </SheetClose>
-            </SheetFooter>
+            <Button type="submit">Submit</Button>
+            <SheetFooter>{/* <SheetClose asChild></SheetClose> */}</SheetFooter>
           </form>
         </Form>
       </SheetContent>
