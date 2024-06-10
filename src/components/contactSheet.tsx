@@ -27,6 +27,7 @@ import {
 
 const formSchema = z.object({
   username: z.string().min(2).max(50),
+  email: z.string().email({ message: "Invalid email address" }),
 });
 
 export function ContactSheet() {
@@ -34,6 +35,7 @@ export function ContactSheet() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
+      email: "",
     },
   });
 
@@ -47,6 +49,7 @@ export function ContactSheet() {
       <SheetTrigger asChild>
         <Button>Get in touch!</Button>
       </SheetTrigger>
+
       <SheetContent>
         <SheetHeader>
           <SheetTitle>{`Let's chat!`}</SheetTitle>
@@ -54,36 +57,40 @@ export function ContactSheet() {
             Fill out the form below and I will get back to you ASAP.
           </SheetDescription>
         </SheetHeader>
+
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
               control={form.control}
               name="username"
               render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="grid gap-4 py-4">Username</FormLabel>
-                  <FormControl>
-                    <Input placeholder="shadcn" {...field} />
-                  </FormControl>
-                  <FormMessage />
+                <FormItem className=" mt-6">
+                  <div className="flex items-center gap-2 mt-6">
+                    <FormLabel className="font-semibold">Name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Michael Soofian" {...field} />
+                    </FormControl>
+                  </div>
+                  <FormMessage className="pl-12" />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem className="mt-2">
+                  <div className="flex items-center gap-2 ">
+                    <FormLabel className="font-semibold">Email</FormLabel>
+                    <FormControl>
+                      <Input placeholder="xxxxxx@gmail.com" {...field} />
+                    </FormControl>
+                  </div>
+                  <FormMessage className="pl-12" />
                 </FormItem>
               )}
             />
 
-            {/* <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
-        </div> */}
             <SheetFooter>
               <SheetClose asChild>
                 <Button type="submit">Submit</Button>
