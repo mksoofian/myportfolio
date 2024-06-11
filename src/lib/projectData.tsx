@@ -128,7 +128,7 @@ export const relatedExperience: RelatedExperiences = [
       "Greenfield Accounting is a accounting firm in Rockland County, NY",
     dates: "May 2023",
     bulletPoints: [
-      " Removed bloated CSS frameworks and unused code from a legacy site and updated CSS to use new and improved layout schemes. Built new site in Next.js and React and deployed with Vercel. (website link). Utilized emotion CSS, Javascript, and React hooks in this project.",
+      " Removed bloated CSS frameworks and unused code from a legacy site and updated CSS to use new and improved layout schemes. Built new site in Next.js and React and deployed with Vercel. Utilized emotion CSS, Javascript, and React hooks in this project.",
     ],
     websiteUrl: "https://greenfieldtax.com/",
   },
