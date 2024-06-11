@@ -21,7 +21,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="www.linkedin.com/in/msoofian03">
+          <Link href="https://www.linkedin.com/in/msoofian03/">
             <Image
               src="/icons8-linkedin-50.png"
               width={25}
