@@ -1,8 +1,3 @@
-// import { Button } from "./ui/button";
-// import { buttonVariants } from "@/components/ui/button";
-// import Link from "next/link";
-import { ContactSheet } from "@/components/contactSheet";
-
 export default function Nav() {
   return (
     <nav className="flex justify-between py-4 px-4 sm:px-4 sticky top-0 z-50 bg-white bg-opacity-90 ">
