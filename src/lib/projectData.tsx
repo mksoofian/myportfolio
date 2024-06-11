@@ -159,7 +159,6 @@ export const allBadges = [
   "CSS4",
   "Animation",
   "Responsive Design",
-  "NPM",
   "PayloadCMS",
   "VS Code",
   "Git",
