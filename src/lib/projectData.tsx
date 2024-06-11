@@ -29,8 +29,9 @@ type Badges = string[];
 export const projects: Projects = [
   {
     name: "Menu",
-    description: "Restaurant menu rendered based on a heavily nested API.",
-    image: "/menu_site_screenshot.png",
+    description:
+      "FlipDish tech task to render a restaurant menu based on a heavily nested API .",
+    image: "/flipdish-logo.svg",
     url: "https://flip-dish-2.vercel.app/",
     github: "https://github.com/mksoofian/flip_dish_2",
     badges: ["api", "typescript", "tailwind", "shadcn"],

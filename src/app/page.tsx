@@ -42,11 +42,11 @@ export default function Home() {
             return (
               <Badge
                 key={badge}
-                className={`${
-                  styles.loader__element
-                } ${"font-syne"} ${badgeVariants({
-                  variant: "secondary",
-                })}`}
+                className={`!animate-slideAndFadeIn ${"font-syne"} ${badgeVariants(
+                  {
+                    variant: "secondary",
+                  }
+                )}`}
               >
                 {badge}
               </Badge>

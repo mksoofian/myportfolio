@@ -76,11 +76,22 @@ const config = {
           "0%, 100%": { translate: "-5vw" },
           "50%": { translate: "10vw" },
         },
+        slideIn: {
+          "0%": { translate: "-100vw" },
+          "100%": { translate: "0vw" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         wiggle: "wiggle 5s ease-in-out infinite",
+        slideIn: "slideIn 1.5s ease-in-out",
+        fadeIn: "fadeIn 1.25s ease-in-out",
+        slideAndFadeIn: "slideIn 1.5s ease-in-out, fadeIn 1.75s ease-in-out",
       },
     },
   },
