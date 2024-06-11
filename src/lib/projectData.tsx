@@ -25,6 +25,7 @@ type Experience = {
   websiteUrl?: string;
   projectUrl?: string;
 };
+type Badges = string[];
 export const projects: Projects = [
   {
     name: "Menu",
@@ -143,4 +144,30 @@ export const relatedExperience: RelatedExperiences = [
       "Managed projects from initial lead creation through completion and maintained client relationships. ",
     ],
   },
+];
+export const allBadges = [
+  "React",
+  "Next.js",
+  "Vite",
+  "TypeScript",
+  "Javascript",
+  "Tailwind",
+  "Shadcn",
+  "React-Hook-Form",
+  "API",
+  "HTML5",
+  "CSS4",
+  "Animation",
+  "Responsive Design",
+  "NPM",
+  "PayloadCMS",
+  "VS Code",
+  "Git",
+  "Github",
+  "NPM",
+  "Vercel",
+  "Photoshop",
+  "Figma",
+  "Microsoft Office",
+  "Google Workspace",
 ];

@@ -32,7 +32,7 @@ export default function Home() {
           </p>
         </div> */}
         <div className="lg:max-w-96 px-8 sm:px-4">
-          <h1 className="!text-8xl">web developer</h1>
+          <h1 className="!text-6xl sm:text-8xl">web developer</h1>
           <p>
             Passionate and motivated web developer with proven ability to
             deliver beautiful and interactive web apps, optimize user
@@ -45,7 +45,7 @@ export default function Home() {
           </p>
         </div>
         {/* Tabs Card */}
-        <div>
+        {/* <div>
           <Tabs defaultValue="technologies" className="w-80 sm:w-[400px]">
             <TabsList className="w-full">
               <>
@@ -93,7 +93,7 @@ export default function Home() {
               })}
             </>
           </Tabs>
-        </div>
+        </div> */}
       </section>
       <section id="Projects" className="my-8">
         {/* Projects */}
