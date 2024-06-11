@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Inter, Syne } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import Nav from "@/components/nav";
 
-const fontSans = FontSans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-inter",
+});
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
 });
 export const metadata: Metadata = {
   title: "Michael Soofian",
@@ -23,7 +27,8 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          inter.variable,
+          syne.variable
         )}
       >
         <Nav />

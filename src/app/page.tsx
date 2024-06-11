@@ -19,10 +19,20 @@ export default function Home() {
     <main className="sm:mt-10 mt-2 flex flex-col">
       <section className="flex justify-evenly flex-wrap gap-8" id="About">
         {/* About Me */}
+        {/* <div className="lg:max-w-96 px-8 sm:px-4">
+          <p>
+            Passionate and motivated web developer with proven ability to
+            deliver beautiful and interactive web apps, optimize user
+            experience, and collaborate with teams. Technical skills include
+            strong UX and UI abilities with a focus on{" "}
+            <span className="font-bold">React, Nextjs</span> and a preference of
+            <span className="font-bold"> Tailwind + Shadcn</span> for styling.
+            Effective communicator with advanced soft skills developed over a
+            decade of experience in the apparel industry.
+          </p>
+        </div> */}
         <div className="lg:max-w-96 px-8 sm:px-4">
-          <h2 className="text-2xl font-semibold pb-2 rounded-lg text-orange-800">
-            {`< react developer />`}
-          </h2>
+          <h1 className="!text-8xl">web developer</h1>
           <p>
             Passionate and motivated web developer with proven ability to
             deliver beautiful and interactive web apps, optimize user
@@ -181,7 +191,7 @@ export default function Home() {
                       <>
                         {bulletPoints.map((bullet, index) => {
                           return (
-                            <li key={bulletPoints[index]} className="">
+                            <li key={bulletPoints[index]} className="my-2">
                               {bullet}
                             </li>
                           );
