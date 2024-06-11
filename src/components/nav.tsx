@@ -4,9 +4,7 @@ export default function Nav() {
   return (
     <nav className="flex justify-between py-4 px-4 sm:px-4 sticky top-0 z-50 bg-white bg-opacity-90 ">
       {/* <h2 className="hidden sm:block">{`< react developer />`}</h2> */}
-      <p className="font-medium text-xl sm:text-2xl font-syne">
-        michael soofian
-      </p>
+      <p className="text-xl sm:text-2xl font-syne">michael soofian</p>
       {/*  ADD EMAIL, LINKEDIN, GITHUB ICONS */}
       <ul className="flex gap-4 sm:gap-1">
         <li className="transition ease-in-out hover:translate-y-[-.15rem] hover:scale-110 ">
