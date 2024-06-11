@@ -9,7 +9,7 @@ export default function Nav() {
       </p>
       {/*  ADD EMAIL, LINKEDIN, GITHUB ICONS */}
       <ul className="flex gap-4 sm:gap-1">
-        <li>
+        <li className="transition ease-in-out hover:translate-y-[-.15rem] hover:scale-110 ">
           {/* use alternate email adress? */}
           <Link href="mailto:mksoofian@gmail.com">
             <Image
@@ -20,7 +20,7 @@ export default function Nav() {
             />
           </Link>
         </li>
-        <li>
+        <li className="transition ease-in-out hover:translate-y-[-.15rem] hover:scale-110">
           <Link href="https://www.linkedin.com/in/msoofian03/">
             <Image
               src="/icons8-linkedin-50.png"
@@ -31,7 +31,7 @@ export default function Nav() {
             />
           </Link>
         </li>
-        <li>
+        <li className="transition ease-in-out hover:translate-y-[-.15rem] hover:scale-110">
           <Link href="https://github.com/mksoofian">
             <Image
               src="/icons8-github-50.png"
