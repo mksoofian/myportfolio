@@ -106,29 +106,28 @@ export const relatedExperience: RelatedExperiences = [
     role: "Freelance Web Developer",
     companyName: "AtoZ Supplies ",
     companyDescription:
-      "A to Z Supplies is a  distributor of food-service packaging  and janitorial disposable  products.",
+      "Designed a temporary website using figma, React and CSS and deployed via Github and Vercel to funnel visitors to the WhatsApp Business account.",
     dates: "Nov 2023 - Jun 2024",
     bulletPoints: [
       `Designed a temporary website using figma, HTML and CSS and deployed via Github and Vercel to funnel visitors to our WhatsApp Business account.`,
-      `Designed and created an updated company ecommerce website with Nextjs, React, Typescript, CSS, and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.`,
+      "Designed and created an updated company ecommerce website with Nextjs, React, Typescript, CSS,  and PayloadCMS to help offload non-stock products, reach new customers and increase brand visibility.",
       // `Designed and created an updated company ecommerce website with ${(
       //   <span className="font-semibold">Nextjs, React, Typescript</span>
       // )}, CSS, and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.`,
-      "Proactively revamped and modernizing company branding and marketing materials with figma to better connect with customers and improve the brand positioning and website.",
-      "Continuously reviewing warehousing software and office SOP for improving  efficiency and preparation for growth and  scale. ",
+      "Proactively revamped and modernized company branding and marketing materials with Figma to better connect with customers and improve the brand positioning and website.",
+      "iContinuously reviewing  warehousing software and office SOP for improving  efficiency and preparation for growth and  scale.",
     ],
     websiteUrl: "https://atozsupplies.com/",
-    projectUrl:
-      "https://drive.google.com/file/d/17j06Yh6RGSEEcvliiJnM9vK1Kz8ZkDWx/view?usp=sharing",
+    projectUrl: "https://atoz-local.vercel.app/",
   },
   {
     role: "Freelance Web Developer",
     companyName: "Greenfield Accounting ",
     companyDescription:
       "Greenfield Accounting is a accounting firm in Rockland County, NY",
-    dates: "May 2023",
+    dates: "Apr 2023 - Nov 2023",
     bulletPoints: [
-      " Removed bloated CSS frameworks and unused code from a legacy site and updated CSS to use new and improved layout schemes. Built new site in Next.js and React and deployed with Vercel. Utilized emotion CSS, Javascript, and React hooks in this project.",
+      "Created a new  website. Removed bloated CSS frameworks and unused code from a legacy site and updated CSS to use new and improved layout schemes. Built a new site in Next.js and React and deployed with Vercel. Utilized emotion CSS, Javascript, and React hooks.",
     ],
     websiteUrl: "https://greenfieldtax.com/",
   },
@@ -137,7 +136,7 @@ export const relatedExperience: RelatedExperiences = [
     companyName: "Tivuna",
     companyDescription:
       "Tivuna is a glass and aluminum glazing business focused on building facade projects.",
-    dates: "July 2022 - Feb 2023",
+    dates: "Jul 2022 - Feb 2023",
     bulletPoints: [
       "Maintained and improved design for the company website.",
       "Established an outline for the proper flow of internal information leading to improved time management, efficiency, and accountability.",
