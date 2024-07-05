@@ -115,7 +115,7 @@ export const relatedExperience: RelatedExperiences = [
       //   <span className="font-semibold">Nextjs, React, Typescript</span>
       // )}, CSS, and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.`,
       "Proactively revamped and modernized company branding and marketing materials with Figma to better connect with customers and improve the brand positioning and website.",
-      "iContinuously reviewing  warehousing software and office SOP for improving  efficiency and preparation for growth and  scale.",
+      "Continuously reviewing  warehousing software and office SOP for improving  efficiency and preparation for growth and  scale.",
     ],
     websiteUrl: "https://atozsupplies.com/",
     projectUrl: "https://atoz-local.vercel.app/",
