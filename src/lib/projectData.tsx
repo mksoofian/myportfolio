@@ -110,7 +110,7 @@ export const relatedExperience: RelatedExperiences = [
     dates: "Nov 2023 - Jun 2024",
     bulletPoints: [
       `Designed a temporary website using figma, HTML and CSS and deployed via Github and Vercel to funnel visitors to our WhatsApp Business account.`,
-      "Designed and created an updated company ecommerce website with Nextjs, React, Typescript, Tailwind CSS, Framer-Motion and more to help offload non-stock products, reach new customers and increase brand visibility.",
+      "Designed and created an updated company ecommerce website with Nextjs, React, Typescript, Tailwind CSS, Framer-Motion and Supabase for the backend to help offload non-stock products, reach new customers and increase brand visibility.",
       // `Designed and created an updated company ecommerce website with ${(
       //   <span className="font-semibold">Nextjs, React, Typescript</span>
       // )}, CSS, and PayloadCMS to help offload non-stock product, reach new customers and increase brand visibility.`,
